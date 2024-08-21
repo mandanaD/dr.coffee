@@ -1,0 +1,16 @@
+// Declaration for .png files
+declare module "*.png" {
+    const value: string;
+    export default value;
+}
+
+declare module "*.jpg" {
+    const value: string;
+    export default value;
+}
+
+// Declaration for .svg files
+declare module "*.svg" {
+    const value: string;
+    export default value;
+}

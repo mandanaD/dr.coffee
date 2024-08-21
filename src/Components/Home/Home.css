@@ -1,0 +1,54 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    min-height: 100vh;
+}
+.mySwiper button{
+    outline-width:1px ;
+}
+.mySwiper img{
+    width: 8rem;
+    height: max-content;
+}
+.swiper-wrapper {
+    min-height: 100vh;
+}
+
+.banner-2,.banner-3,.banner-4,.banner-5 {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.banner-2{
+    background-image: url("src/assets/home/banner2.jpg");
+}
+.banner-3{
+    background-image: url("src/assets/home/banner3.jpg");
+}
+.banner-4{
+    background-image: url("src/assets/home/banner4.jpg");
+}
+.banner-5{
+    background-image: url("src/assets/home/banner5.jpg");
+}
+
+.swiper-pagination {
+    margin-bottom: 2rem;
+}
+
+.swiper-pagination-bullet {
+    background: transparent !important;
+    border: 1px solid white;
+    opacity: 1 !important;
+    margin-inline: 8px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+}

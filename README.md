@@ -1,6 +1,6 @@
 # Dr.Coffee 
 
-Welcome to my Hangman game, built to practice TypeScript with React. You can try out the game by clicking the link below:
+I created this homepage inspired by the Dr.Coffee website because I found it visually appealing and loved its smooth animations. My goal was to make it fully responsive and add a few minor tweaks while keeping the overall design close to the original.
 
 ## [Play the Game Here](https://mandanad.github.io/hangman/)
 

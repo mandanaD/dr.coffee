@@ -6,8 +6,8 @@ const Footer = () => {
     return (
         <div className={"footer w-full"}>
             <div className={"footer-top py-5 h-32 flex items-center text-white"}>
-                <div className={"w-11/12 mx-auto px-16 footer-bottom-con flex justify-between"}>
-                    <div className={"flex items-center footer-icon-container gap-3"}>
+                <div className={"w-11/12 mx-auto px-16 footer-bottom-con flex justify-around md:justify-between"}>
+                    <div className={"flex-col md:flex-row flex items-center footer-icon-container gap-3"}>
                         <div className={"footer-icon"}>
                             <Icon name='bx-cart' size="28px"/>
                         </div>
@@ -15,12 +15,12 @@ const Footer = () => {
                             <h1 className={"font-bold"}>
                                 Shop Now
                             </h1>
-                            <p className={"blur-text mt-2"}>
+                            <p className={"blur-text mt-2 hidden md:inline-block"}>
                                 Order coffee machines online
                             </p>
                         </div>
                     </div>
-                    <div className={"flex items-center footer-icon-container gap-3"}>
+                    <div className={"flex-col md:flex-row flex items-center footer-icon-container gap-3"}>
                         <div className={"footer-icon"}>
                             <Icon name='bx-message-detail' size="28px"/>
                         </div>
@@ -28,12 +28,12 @@ const Footer = () => {
                             <h1 className={"font-bold "}>
                                 Service & Support
                             </h1>
-                            <p className={"blur-text mt-2"}>
+                            <p className={"blur-text mt-2 hidden md:inline-block"}>
                                 Efficient troubleshooting
                             </p>
                         </div>
                     </div>
-                    <div className={"flex items-center footer-icon-container gap-3"}>
+                    <div className={"flex-col md:flex-row flex items-center footer-icon-container gap-3"}>
                         <div className={"footer-icon"}>
                             <Icon name='bx-headphone' size="28px"/>
                         </div>
@@ -41,7 +41,7 @@ const Footer = () => {
                             <h1 className={"font-bold"}>
                                 Contact Us
                             </h1>
-                            <p className={"blur-text mt-2"}>
+                            <p className={"blur-text mt-2 hidden md:inline-block"}>
                                 Dr. Coffee's contact info
                             </p>
                         </div>
@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
             <div className={"footer-bottom blur-text "}>
                 <div className={"w-11/12 mx-auto footer-bottom-con px-16"}>
-                    <div className={"flex justify-between w-full footer-bottom-text"}>
+                    <div className={"md:flex hidden justify-between w-full footer-bottom-text"}>
                         <div className={"footer-items"}>
                             <h1 className={"text-white text-sm"}>
                                 About Us
@@ -149,16 +149,16 @@ const Footer = () => {
                             </p>
                         </div>
                     </div>
-                    <div className={"flex gap-3 pb-7 footer-bottom-icon"}>
+                    <div className={"flex justify-center md:justify-start md:pt-0 pt-10 gap-3 pb-7 footer-bottom-icon"}>
                         <Icon name='bxl-linkedin' size="23px"/>
                         <Icon name='bxl-facebook' size="23px"/>
                         <Icon name='bxl-twitter' size="23px"/>
                     </div>
-                    <div className={"pt-5 pb-10 flex justify-between"}>
+                    <div className={"pt-5 pb-10 flex text-center justify-center md:justify-between items-center"}>
                         <p>
-                        Copyright © 2021 Suzhou Dr.coffee System Technology Co., Ltd. 版权所有 苏ICP备17060705号-3
+                            Copyright © 2021 Suzhou Dr.coffee System Technology Co., Ltd. 版权所有 苏ICP备17060705号-3
                         </p>
-                        <img src={footerLogo} alt=""/>
+                        <img className={"md:inline-block hidden"} src={footerLogo} alt=""/>
                     </div>
                 </div>
             </div>

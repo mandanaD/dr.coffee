@@ -1,0 +1,23 @@
+@media (min-width: 1024px) {
+    .nav-bar {
+        max-width: 45rem;
+    }
+    .inner-hover{
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+}
+@media (max-width: 1024px) {
+    .nav-bar{
+        color: black;
+    }
+    .nav-p{
+        font-weight: bold;
+    }
+    .active-li{
+        background: #c9151e;
+        color: white;
+    }
+    .active-item{
+        display: inline-block;
+    }
+}

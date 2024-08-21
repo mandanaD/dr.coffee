@@ -1,7 +1,7 @@
 import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css"; // This imports the core Swiper CSS
 import "swiper/css/pagination"; // This imports the pagination module CSS
-import {Pagination,Autoplay} from "swiper/modules";
+import {Pagination, Autoplay} from "swiper/modules";
 import Icon from "../Icon/Icon.tsx";
 
 import "./Home.css"
@@ -58,15 +58,15 @@ const Home = () => {
     const exploreList = exploreItems.map((item, index) => {
         return (
             <div key={index}
-                 className={"relative group rounded overflow-hidden mb-10 w-full text-white flex justify-center"}
+                 className={"relative group rounded overflow-hidden min-h-80 mb-10 w-full text-white flex justify-center"}
                  style={{aspectRatio: "8/3"}}
             >
                 <img
-                    className={"absolute inset-0 z-0 h-full w-full rounded transition-all ease-linear duration-700 group-hover:scale-105"}
+                    className={"absolute object-cover inset-0 z-0 h-full w-full rounded transition-all ease-linear duration-700 group-hover:scale-105"}
                     src={item.exploreImg} alt=""/>
                 <div className={"relative z-10 flex flex-col items-center mt-14"}>
                     <img className={"w-10"} src={item.productImg} alt=""/>
-                    <h2 className={"my-7 text-3xl font-bold"}>
+                    <h2 className={"my-7 sm:text-3xl text-2xl font-bold"}>
                         {item.title}
                     </h2>
                     <button
@@ -93,18 +93,19 @@ const Home = () => {
                     }}
                     centeredSlides={true}
                     autoplay={{
-                        delay: 5000,
+                        delay: 15000,
                         disableOnInteraction: false,
                     }}
-                    modules={[Pagination,Autoplay]}
+                    modules={[Pagination, Autoplay]}
                     className="mySwiper min-h-screen text-white"
                 >
                     <SwiperSlide>
                         <div className={"banner-2"}>
-                            <div className={"w-10/12 h-full mx-auto flex items-center gap-20"}>
-                                <img src={pic2} alt="My Image"/>
-                                <div className={"text-start"}>
-                                    <h1 className={"text-4xl font-bold mb-10"}>
+                            <div
+                                className={"w-10/12 h-full mx-auto flex items-center gap-20 lg:justify-start justify-center"}>
+                                <img className={"lg:inline-block hidden"} src={pic2} alt="My Image"/>
+                                <div className={"lg:inline-block flex flex-col items-center"}>
+                                    <h1 className={"sm:text-4xl text-3xl font-bold mb-10"}>
                                         The entire city is my cafe
                                     </h1>
                                     <button
@@ -118,10 +119,11 @@ const Home = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={"banner-3"}>
-                            <div className={"w-10/12 h-full mx-auto flex items-center gap-20"}>
-                                <img src={pic3} alt="My Image"/>
-                                <div className={"text-start"}>
-                                    <h1 className={"text-4xl font-bold mb-10"}>
+                            <div
+                                className={"w-10/12 h-full mx-auto flex items-center gap-20 lg:justify-start justify-center"}>
+                                <img className={"lg:inline-block hidden"} src={pic3} alt="My Image"/>
+                                <div className={"lg:inline-block flex flex-col items-center"}>
+                                    <h1 className={"sm:text-4xl text-3xl font-bold mb-10"}>
                                         The entire city is my cafe
                                     </h1>
                                     <button
@@ -135,10 +137,11 @@ const Home = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={"banner-4"}>
-                            <div className={"w-10/12 h-full mx-auto flex items-center gap-20"}>
-                                <img src={pic4} alt="My Image"/>
-                                <div className={"text-start"}>
-                                    <h1 className={"text-4xl font-bold mb-10"}>
+                            <div
+                                className={"w-10/12 h-full mx-auto flex items-center gap-20 lg:justify-start justify-center"}>
+                                <img className={"lg:inline-block hidden"} src={pic4} alt="My Image"/>
+                                <div className={"lg:inline-block flex flex-col items-center"}>
+                                    <h1 className={"sm:text-4xl text-3xl font-bold mb-10"}>
                                         The entire city is my cafe
                                     </h1>
                                     <button
@@ -152,10 +155,11 @@ const Home = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={"banner-5"}>
-                            <div className={"w-10/12 h-full mx-auto flex items-center gap-20"}>
-                                <img src={pic5} alt="My Image"/>
-                                <div className={"text-start"}>
-                                    <h1 className={"text-4xl font-bold mb-10"}>
+                            <div
+                                className={"w-10/12 h-full mx-auto flex items-center gap-20 lg:justify-start justify-center"}>
+                                <img className={"lg:inline-block hidden"} src={pic5} alt="My Image"/>
+                                <div className={"lg:inline-block flex flex-col items-center"}>
+                                    <h1 className={"sm:text-4xl text-3xl font-bold mb-10"}>
                                         The entire city is my cafe
                                     </h1>
                                     <button
@@ -171,7 +175,7 @@ const Home = () => {
             </div>
             <div className="explore w-11/12 mx-auto">
                 <div className={"text-center mt-20 mb-10"}>
-                    <h1 className={"text-3xl font-bold mb-2"}>EXPLORE PRODUCTS</h1>
+                    <h1 className={"sm:text-3xl text-2xl font-bold mb-2"}>EXPLORE PRODUCTS</h1>
                     <p className={"text-sm font-light"}>
                         Premium coffee any time & anywhere
                     </p>
@@ -181,9 +185,9 @@ const Home = () => {
                 </div>
                 {exploreList}
             </div>
-            <div className="w-11/12 mx-auto min-h-screen mt-5 mb-10 rounded pb-10" style={{background: "#f7f7f7"}}>
+            <div className="w-11/12 mx-auto mt-5 mb-10 rounded pb-10" style={{background: "#f7f7f7"}}>
                 <div className="flex flex-col items-center pt-20 pb-10">
-                    <h1 className={"text-3xl font-bold mb-2"}>TECHNOLOGICAL EXPLORATION</h1>
+                    <h1 className={"sm:text-3xl text-2xl text-center font-bold mb-2"}>TECHNOLOGICAL EXPLORATION</h1>
                     <p className={"text-sm font-light"}>
                         Customer-oriented, technology-driven
                     </p>
@@ -193,41 +197,47 @@ const Home = () => {
                         <Icon name='bx-right-arrow-alt' size="20px"/>
                     </button>
                 </div>
-                <div className={"flex justify-between gap-5 px-24"}>
-                    <div className={"rounded-2xl overflow-hidden"}>
-                        <img src={technical1}
-                             className={"w-full transition-all ease-linear duration-500 hover:scale-105"} alt=""/>
+                <div className={"px-4 lg:px-24"}>
+                    <div className={"flex justify-between gap-2 sm:gap-5"}>
+                        <div className={"rounded-2xl overflow-hidden"}>
+                            <img src={technical1}
+                                 className={"w-full transition-all ease-linear duration-500 hover:scale-105"} alt=""/>
+                        </div>
+                        <div className={"flex flex-col justify-between"}>
+                            <div className={"flex justify-between w-full flex-col sm:flex-row"}>
+                                <div className={"overflow-hidden rounded-2xl flex-img"}>
+                                    <img className={"transition-all ease-linear duration-500 hover:scale-105"}
+                                         src={technical2} alt=""/>
+                                </div>
+                                <div className={"overflow-hidden rounded-2xl flex-img"}>
+                                    <img className={"transition-all ease-linear duration-500 hover:scale-105"}
+                                         src={technical3} alt=""/>
+                                </div>
+                            </div>
+                            <div className={"w-full sm:inline-block hidden overflow-hidden rounded-2xl"}>
+                                <img className={"w-full transition-all ease-linear duration-500 hover:scale-105"}
+                                     src={technical4} alt=""/>
+                            </div>
+                        </div>
                     </div>
-                    <div className={"flex flex-col justify-between"}>
-                        <div className={"flex justify-between w-full "}>
-                            <div className={"overflow-hidden rounded-2xl"} style={{width: "48.87%"}}>
-                                <img className={"transition-all ease-linear duration-500 hover:scale-105"}
-                                     src={technical2} alt=""/>
-                            </div>
-                            <div className={"overflow-hidden rounded-2xl"} style={{width: "48.87%"}}>
-                                <img className={"transition-all ease-linear duration-500 hover:scale-105"}
-                                     src={technical3} alt=""/>
-                            </div>
-                        </div>
-                        <div className={"w-full h overflow-hidden rounded-2xl"}>
-                            <img className={"w-full transition-all ease-linear duration-500 hover:scale-105"}
-                                 src={technical4} alt=""/>
-                        </div>
+                    <div className={"w-full inline-block mt-2 sm:hidden overflow-hidden rounded-2xl"}>
+                        <img className={"w-full transition-all ease-linear duration-500 hover:scale-105"}
+                             src={technical4} alt=""/>
                     </div>
                 </div>
             </div>
-            <div className={"w-11/12 mx-auto pb-10 grid grid-cols-2 gap-4"}>
-                <div className={"relative w-full group rounded overflow-hidden text-white"}
+            <div className={"w-11/12 mx-auto pb-10 grid grid-cols-1 md:grid-cols-2 gap-4"}>
+                <div className={"relative w-full group min-h-72 rounded overflow-hidden text-white"}
                      style={{aspectRatio: "8/6"}}
                 >
                     <img src={news1}
                          className={"absolute w-full h-full rounded transition-all ease-linear duration-700 group-hover:scale-105"}
                          alt=""/>
                     <div className={"relative z-10 flex flex-col items-center mt-14"}>
-                        <h2 className={"text-3xl font-bold"}>
+                        <h2 className={"sm:text-3xl text-2xl font-bold"}>
                             Product Distribution
                         </h2>
-                        <p className={"mt-4 mb-8"}>
+                        <p className={"mt-4 mb-8 w-11/12 text-center"}>
                             Dr. Coffee's product and services now cover 100+ countries and regions
                         </p>
                         <button
@@ -239,14 +249,14 @@ const Home = () => {
                         </button>
                     </div>
                 </div>
-                <div className={"relative h-full w-full group rounded overflow-hidden text-white"}
+                <div className={"relative h-full w-full min-h-72 group rounded overflow-hidden text-white"}
                      style={{aspectRatio: "8/6"}}
                 >
                     <img src={news2}
                          className={"absolute w-full h-full rounded transition-all ease-linear duration-700 group-hover:scale-105"}
                          alt=""/>
                     <div className={"relative z-10 flex flex-col items-center mt-14"}>
-                        <h2 className={"text-3xl font-bold"}>
+                        <h2 className={"sm:text-3xl text-2xl font-bold"}>
                             Latest News
                         </h2>
                         <p className={"mt-4 mb-8"}>

@@ -8,6 +8,12 @@ import {Pagination, Autoplay} from "swiper/modules";
 import Icon from "../Icon/Icon.tsx";
 
 import "./Home.css"
+import banner1 from "../../assets/home/banner1.jpg"
+import banner2 from "../../assets/home/banner2.jpg"
+import banner3 from "../../assets/home/banner3.jpg"
+import banner4 from "../../assets/home/banner4.jpg"
+import banner5 from "../../assets/home/banner5.jpg"
+
 import pic2 from "../../assets/home/pic13.png"
 import pic3 from "../../assets/home/pic14.png"
 import pic4 from "../../assets/home/pic15.png"
@@ -109,10 +115,10 @@ const Home = () => {
                     className="mySwiper min-h-screen text-white capitalize"
                 >
                     <SwiperSlide>
-                        <div className={"banner-1"}/>
+                        <div className={"banner-1"} style={{backgroundImage: `url(${banner1})`}}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className={"banner-2"}>
+                        <div className={"banner-2"} style={{backgroundImage: `url(${banner2})`}}>
                             <div
                                 className={"w-10/12 h-full mx-auto flex items-center gap-20 lg:justify-start justify-center"}>
                                 <img className={"lg:inline-block hidden"} src={pic2} alt="My Image"/>
@@ -130,7 +136,7 @@ const Home = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className={"banner-3"}>
+                        <div className={"banner-3"} style={{backgroundImage: `url(${banner3})`}}>
                             <div
                                 className={"w-10/12 h-full mx-auto flex items-center gap-20 lg:justify-start justify-center"}>
                                 <img className={"lg:inline-block hidden"} src={pic3} alt="My Image"/>
@@ -148,7 +154,7 @@ const Home = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className={"banner-4"}>
+                        <div className={"banner-4"} style={{backgroundImage: `url(${banner4})`}}>
                             <div
                                 className={"w-10/12 h-full mx-auto flex items-center gap-20 lg:justify-start justify-center"}>
                                 <img className={"lg:inline-block hidden"} src={pic4} alt="My Image"/>
@@ -166,7 +172,7 @@ const Home = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className={"banner-5"}>
+                        <div className={"banner-5"} style={{backgroundImage: `url(${banner5})`}}>
                             <div
                                 className={"w-10/12 h-full mx-auto flex items-center gap-20 lg:justify-start justify-center"}>
                                 <img className={"lg:inline-block hidden"} src={pic5} alt="My Image"/>

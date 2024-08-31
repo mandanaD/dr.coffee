@@ -29,27 +29,22 @@
 }
 
 .banner-1 {
-    background-image: url("src/assets/home/banner1.jpg");
     background-position: center;
 }
 
 .banner-2 {
-    background-image: url("src/assets/home/banner2.jpg");
     background-position: 70%;
 }
 
 .banner-3 {
-    background-image: url("src/assets/home/banner3.jpg");
     background-position: center;
 }
 
 .banner-4 {
-    background-image: url("src/assets/home/banner4.jpg");
     background-position: center;
 }
 
 .banner-5 {
-    background-image: url("src/assets/home/banner5.jpg");
     background-position: 70%;
 }
 
